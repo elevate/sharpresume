@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Just3Ws.SharpResume.HRXml.ArticleType" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ArticleType.cs</FileName>
+      <HashCode>BAGAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.BaseSharpResumeObject&lt;T&gt;" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\BaseSharpResumeObject.cs</FileName>
+      <HashCode>AAAAAAAAAAQAAAQCgAACQAAQABAAAMQAAAAAAAAAAiA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.BasicBibliographicRecordType" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\BasicBibliographicRecordType.cs</FileName>
+      <HashCode>AAIAAAABAAAAAEAAAAAAAAQAAAAAAAAAAAAAQAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.BasicBibliographicRecordTypeName" Collapsed="true">
+    <Position X="1" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\BasicBibliographicRecordTypeName.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.BookType" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\BookType.cs</FileName>
+      <HashCode>AAAAAAAAAQEBAAAAAAAAAAAIAAAAAAAAAgAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.ClassificationType" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ClassificationType.cs</FileName>
+      <HashCode>AAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.ConferencePaperType" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ConferencePaperType.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.ContactMethodType" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ContactMethodType.cs</FileName>
+      <HashCode>AAAAAAAAhEAABAgAAAIAAAAAABAEAACAAIAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.CopyrightType" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\CopyrightType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.CopyrightTypeCopyrightDates" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\CopyrightTypeCopyrightDates.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.DatesOfAttendanceType" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\DatesOfAttendanceType.cs</FileName>
+      <HashCode>AAQAAAAAAAAgACQAAAAAAAAgACAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.DatesOfServiceType" Collapsed="true">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\DatesOfServiceType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.DeprecatedDatesOfAttendanceType" Collapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\DeprecatedDatesOfAttendanceType.cs</FileName>
+      <HashCode>AAQAAAAAAAAgACQAAAAAAAAgACAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EducationalMeasureType" Collapsed="true">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EducationalMeasureType.cs</FileName>
+      <HashCode>AAAAAQQhAAAAAAAAACAAAAAAYAEAAAAgAIQABAAgBCA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EducationalMeasureTypeClassRank" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EducationalMeasureTypeClassRank.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EducationHistoryTypeSchoolOrInstitution" Collapsed="true">
+    <Position X="7" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EducationHistoryTypeSchoolOrInstitution.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EducationMeasureType" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EducationMeasureType.cs</FileName>
+      <HashCode>AAgAAEAAAAABAAAAEAAAAAAAKAAAIAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EduDegreeType" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EduDegreeType.cs</FileName>
+      <HashCode>AAAgAAAAABBBAQAAAgAEAAAQAQAQAQAAgIEAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EduDegreeTypeDegreeName" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EduDegreeTypeDegreeName.cs</FileName>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EduDegreeTypeOtherHonors" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EduDegreeTypeOtherHonors.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EduMeasureType" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EduMeasureType.cs</FileName>
+      <HashCode>AAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EmpContactInfoType" Collapsed="true">
+    <Position X="19.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EmpContactInfoType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAIAAAAAAAAAABAAAAAABAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EmployerOrgDataType" Collapsed="true">
+    <Position X="21" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EmployerOrgDataType.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EmploymentLocationSummaryType" Collapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EmploymentLocationSummaryType.cs</FileName>
+      <HashCode>ACAAAAAAgAAABAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.EntityIdType" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\EntityIdType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAgAAAAMAAAAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.FlexibleDatesType" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\FlexibleDatesType.cs</FileName>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.HRXmlNamespaces25" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\HRXmlNamespaces25.cs</FileName>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.InternetDomainNameType" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\InternetDomainNameType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAQAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.MajorType" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\MajorType.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAACAQAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.MeasureValueType" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\MeasureValueType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.MilitaryHistoryType" Collapsed="true">
+    <Position X="19.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\MilitaryHistoryType.cs</FileName>
+      <HashCode>AAAgAAAAAAIAAAAAAAAAIAAAAAAAIAAAAAAAAABAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.MilitaryHistoryTypeServiceDetail" Collapsed="true">
+    <Position X="21" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\MilitaryHistoryTypeServiceDetail.cs</FileName>
+      <HashCode>AIAgAAIAAAAAAAAAQAAAAAAACAECDAAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.MinorType" Collapsed="true">
+    <Position X="22.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\MinorType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.MobileTelcomNumberType" Collapsed="true">
+    <Position X="1" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\MobileTelcomNumberType.cs</FileName>
+      <HashCode>gIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.NumericValueType" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\NumericValueType.cs</FileName>
+      <HashCode>BAAAAAAAAAAAQAAAIAAIAACAAAAAACAAAAAgBAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.OtherPublicationType" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\OtherPublicationType.cs</FileName>
+      <HashCode>AAAAAAAAAQEBAAAAAAAAAAAIAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PatentDescriptionType" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PatentDescriptionType.cs</FileName>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAACAAQgAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PatentDescriptionTypePatentDetail" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PatentDescriptionTypePatentDetail.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PatentDescriptionTypePatentDetailIssuingAuthority" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PatentDescriptionTypePatentDetailIssuingAuthority.cs</FileName>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PatentDescriptionTypePatentDetailPatentMilestone" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PatentDescriptionTypePatentDetailPatentMilestone.cs</FileName>
+      <HashCode>AAACAAAEAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PatentHistoryType" Collapsed="true">
+    <Position X="19.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PatentHistoryType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PersonNameType" Collapsed="true">
+    <Position X="1" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameType.cs</FileName>
+      <HashCode>ADAAAAAAAgAAAAQQAAAUBAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAffix" Collapsed="true">
+    <Position X="22.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAffix.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAlternateScript" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAlternateScript.cs</FileName>
+      <HashCode>ADAAAAAAAgAAAAQQAAAUAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAlternateScriptAffix" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAlternateScriptAffix.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAlternateScriptFamilyName" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAlternateScriptFamilyName.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PersonNameTypeFamilyName" Collapsed="true">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeFamilyName.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PostalAddressType" Collapsed="true">
+    <Position X="17.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PostalAddressType.cs</FileName>
+      <HashCode>ACAAAAAAgAAAhAAAICAQAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PostalAddressTypeDeliveryAddress" Collapsed="true">
+    <Position X="19.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PostalAddressTypeDeliveryAddress.cs</FileName>
+      <HashCode>AAAAAAEAAgAAAACAIAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PostalAddressTypeRecipient" Collapsed="true">
+    <Position X="21" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PostalAddressTypeRecipient.cs</FileName>
+      <HashCode>AAAAIAAAAIAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PublicationHistoryType" Collapsed="true">
+    <Position X="22.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PublicationHistoryType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAABAAQAAAAAQEAAAAAAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.PublicationHistoryTypeFormattedPublicationDescription" Collapsed="true">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PublicationHistoryTypeFormattedPublicationDescription.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.RankAchievedType" Collapsed="true">
+    <Position X="12.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\RankAchievedType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.ResumeDocument" Collapsed="true">
+    <Position X="1.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ResumeDocument.cs</FileName>
+      <HashCode>AAAAAAABAAAAAAAggAAAAAAAAAAAAMAAAAAAABAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.SchoolDataType" Collapsed="true">
+    <Position X="15.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolDataType.cs</FileName>
+      <HashCode>QAAAAAAAAAAAgAAAAAAQAAAAAAABAAAAAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.SchoolOrInstitutionType" Collapsed="true">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolOrInstitutionType.cs</FileName>
+      <HashCode>wAAgAAAAABCAAAgAAAAAAAAQAAAAAEBDQAAgAAAEICA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.SchoolOrInstitutionTypeDegree" Collapsed="true">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolOrInstitutionTypeDegree.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.SchoolOrInstitutionTypeLocationSummary" Collapsed="true">
+    <Position X="17.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolOrInstitutionTypeLocationSummary.cs</FileName>
+      <HashCode>ACAAAAAAgAAABAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.SchoolOrInstitutionTypeOrganizationUnit" Collapsed="true">
+    <Position X="19.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolOrInstitutionTypeOrganizationUnit.cs</FileName>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAgAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.SepContactInfoType" Collapsed="true">
+    <Position X="21" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SepContactInfoType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.StaffingSupportingMaterialsType" Collapsed="true">
+    <Position X="12.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\StaffingSupportingMaterialsType.cs</FileName>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.StaffingSupportingMaterialsTypeAttachmentReference" Collapsed="true">
+    <Position X="14" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\StaffingSupportingMaterialsTypeAttachmentReference.cs</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.StringValue" Collapsed="true">
+    <Position X="17.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\StringValue.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAIAAIAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.StructuredXmlResumeType" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\StructuredXmlResume.cs</FileName>
+      <HashCode>AYAQAAIBEAAEACAAsghAiAIQAQAQAMCgAAAEAgAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.TelcomNumberType" Collapsed="true">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\TelcomNumberType.cs</FileName>
+      <HashCode>AAAgAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.UserAreaType" Collapsed="true">
+    <Position X="19.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\UserAreaType.cs</FileName>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.Properties.Resources" Collapsed="true">
+    <Position X="14" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.Properties.Settings" Collapsed="true">
+    <Position X="22.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.SharpResumeException" Collapsed="true">
+    <Position X="10.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SharpResumeException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.StringHelper" Collapsed="true">
+    <Position X="15.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StringHelper.cs</FileName>
+      <HashCode>AAAAAAAIAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.Validation.PermissionsHelper" Collapsed="true">
+    <Position X="21" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Validation\PermissionsHelper.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.Validation.XmlHelper" Collapsed="true">
+    <Position X="22.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Validation\XmlHelper.cs</FileName>
+      <HashCode>AAAAAAAAAASAAAAAAACAAAAAAAAAEAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Just3Ws.SharpResume.HRXml.Validation.ValidationHelper" Collapsed="true">
+    <Position X="21" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Validation\ValidationHelper.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Just3Ws.SharpResume.HRXml.ISharpResumeObject" Collapsed="true">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ISharpResumeObject.cs</FileName>
+      <HashCode>AAAAAAAAAAQAAAAAAAACQAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Just3Ws.SharpResume.HRXml.AcademicCreditCodeType" Collapsed="true">
+    <Position X="10.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\AcademicCreditCodeType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqBCyQAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.CourseLevelCodeType" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\CourseLevelCodeType.cs</FileName>
+      <HashCode>AACBgAAABIBAQCAAAAAgABAAAAAAAgAAAAAAPmdWAQA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.GraduatingDegreeType" Collapsed="true">
+    <Position X="14" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\GraduatingDegreeType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.ISCEDInstitutionClassificationType" Collapsed="true">
+    <Position X="15.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ISCEDInstitutionClassificationType.cs</FileName>
+      <HashCode>AAABAEAAAIBAACAAAAAgABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.ItemChoiceType" Collapsed="true">
+    <Position X="17.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ItemChoiceType.cs</FileName>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAACAAAAAAAgAAAAABAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.ItemsChoiceType" Collapsed="true">
+    <Position X="19.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\ItemsChoiceType.cs</FileName>
+      <HashCode>AAAAAAAAAEAAECAAAAAEAAAAAAAAAQAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAffixType" Collapsed="true">
+    <Position X="21" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAffixType.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAEAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAlternateScriptAffixType" Collapsed="true">
+    <Position X="22.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAlternateScriptAffixType.cs</FileName>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAEAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.PersonNameTypeAlternateScriptFamilyNamePrimary" Collapsed="true">
+    <Position X="10.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeAlternateScriptFamilyNamePrimary.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.PersonNameTypeFamilyNamePrimary" Collapsed="true">
+    <Position X="12.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PersonNameTypeFamilyNamePrimary.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.PostalAddressTypeType" Collapsed="true">
+    <Position X="14" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\PostalAddressTypeType.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAIAAAAABABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.SchoolOrInstitutionTypeOrganizationUnitAttendanceStatus" Collapsed="true">
+    <Position X="15.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolOrInstitutionTypeOrganizationUnitAttendanceStatus.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Just3Ws.SharpResume.HRXml.SchoolTypeType" Collapsed="true">
+    <Position X="17.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>HRXml\SchoolTypeType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACgAAAEAAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

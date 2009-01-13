@@ -1,0 +1,286 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9941916A-0F69-4568-87F8-BA1F8E5C9CAF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrogsBrain.SharpResume</RootNamespace>
+    <AssemblyName>FrogsBrain.SharpResume</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>SharpResume.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/FrogsBrain.SharpResume/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Release\FrogsBrain.SharpResume.XML</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_dependencies\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievementType.cs" />
+    <Compile Include="AdditionalItemType.cs" />
+    <Compile Include="AdditionalItemTypeEffectiveDate.cs" />
+    <Compile Include="Association.cs" />
+    <Compile Include="AssociationType.cs" />
+    <Compile Include="AssociationTypeRole.cs" />
+    <Compile Include="MySharpResume.cs" />
+    <Compile Include="_BaseAndInterfaces\BaseSharpResumeDocumentObject.cs" />
+    <Compile Include="_Competency\CompetencyType.cs" />
+    <Compile Include="_Competency\CompetencyTypeCompetencyEvidence.cs" />
+    <Compile Include="_Competency\CompetencyTypeCompetencyEvidenceEvidenceId.cs" />
+    <Compile Include="_Competency\CompetencyTypeCompetencyId.cs" />
+    <Compile Include="_Competency\CompetencyTypeCompetencyWeight.cs" />
+    <Compile Include="_Competency\CompetencyTypeTaxonomyId.cs" />
+    <Compile Include="CredentialType.cs" />
+    <Compile Include="CredentialTypeEffectiveDate.cs" />
+    <Compile Include="DistributionGuidelinesType.cs" />
+    <Compile Include="DistributionGuidelinesTypeDistributeTo.cs" />
+    <Compile Include="DistributionType.cs" />
+    <Compile Include="EntityIdTypeIdValue.cs" />
+    <Compile Include="IssuingAuthorityType.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="NonXMLResumeType.cs" />
+    <Compile Include="ReferenceType.cs" />
+    <Compile Include="SpeakingEventType.cs" />
+    <Compile Include="StructuredXMLResumeTypeQualifications.cs" />
+    <Compile Include="_Education\AcademicCreditCodeType.cs" />
+    <Compile Include="_Employment\EmployerOrgDataTypePositionHistory.cs" />
+    <Compile Include="_Employment\EmploymentQuestionAnswerPairType.cs" />
+    <Compile Include="_Employment\JobLevelInfoType.cs" />
+    <Compile Include="_Employment\OccupationalCategoryType.cs" />
+    <Compile Include="_Employment\OccupationalCategoryTypeTaxonomyName.cs" />
+    <Compile Include="_Employment\PositionCompensationType.cs" />
+    <Compile Include="_Employment\PositionCompensationTypeEndingCompensation.cs" />
+    <Compile Include="_Employment\PositionCompensationTypeOtherCompensation.cs" />
+    <Compile Include="_Employment\PositionCompensationTypeStartingCompensation.cs" />
+    <Compile Include="_Employment\PositionHistoryType.cs" />
+    <Compile Include="_Employment\PositionOrgIndustryType.cs" />
+    <Compile Include="_Employment\PositionOrgIndustryTypeIndustryCode.cs" />
+    <Compile Include="_Employment\PositionOrgInfoType.cs" />
+    <Compile Include="_Employment\PositionOrgNameType.cs" />
+    <Compile Include="_Employment\RatingType.cs" />
+    <Compile Include="_Employment\RatingTypeNumericValue.cs" />
+    <Compile Include="_Employment\RatingTypeStringValue.cs" />
+    <Compile Include="_Employment\VerificationType.cs" />
+    <Compile Include="_Employment\VerificationTypeContactInfo.cs" />
+    <Compile Include="_Publication\ArticleType.cs" />
+    <Compile Include="_BaseAndInterfaces\BaseSharpResumeObject.cs" />
+    <Compile Include="BasicBibliographicRecordType.cs" />
+    <Compile Include="BasicBibliographicRecordTypeName.cs" />
+    <Compile Include="_Publication\BookType.cs" />
+    <Compile Include="ClassificationType.cs" />
+    <Compile Include="_Publication\ConferencePaperType.cs" />
+    <Compile Include="ContactMethodType.cs" />
+    <Compile Include="_Publication\CopyrightType.cs" />
+    <Compile Include="_Publication\CopyrightTypeCopyrightDates.cs" />
+    <Compile Include="_Education\CourseLevelCodeType.cs" />
+    <Compile Include="_Education\DatesOfAttendanceType.cs" />
+    <Compile Include="_Military\DatesOfServiceType.cs" />
+    <Compile Include="_Education\DeprecatedDatesOfAttendanceType.cs" />
+    <Compile Include="_Education\EducationalMeasureType.cs" />
+    <Compile Include="_Education\EducationalMeasureTypeClassRank.cs" />
+    <Compile Include="_Education\EducationHistoryTypeSchoolOrInstitution.cs" />
+    <Compile Include="_Education\EducationMeasureType.cs" />
+    <Compile Include="_Education\EduDegreeType.cs" />
+    <Compile Include="_Education\EduDegreeTypeDegreeName.cs" />
+    <Compile Include="_Education\EduDegreeTypeOtherHonors.cs" />
+    <Compile Include="_Education\EduMeasureType.cs" />
+    <Compile Include="_Employment\EmpContactInfoType.cs" />
+    <Compile Include="_Employment\EmployerOrganizationDataType.cs" />
+    <Compile Include="_Employment\EmploymentLocationSummaryType.cs" />
+    <Compile Include="FlexibleDatesType.cs" />
+    <Compile Include="_Education\GraduatingDegreeType.cs" />
+    <Compile Include="InternetDomainNameType.cs" />
+    <Compile Include="_Education\ISCEDInstitutionClassificationType.cs" />
+    <Compile Include="_BaseAndInterfaces\ISharpResumeObject.cs" />
+    <Compile Include="ItemChoiceType.cs" />
+    <Compile Include="ItemsChoiceType.cs" />
+    <Compile Include="_Education\MajorType.cs" />
+    <Compile Include="MeasureValueType.cs" />
+    <Compile Include="_Military\MilitaryHistoryType.cs" />
+    <Compile Include="_Military\MilitaryHistoryTypeServiceDetail.cs" />
+    <Compile Include="_Education\MinorType.cs" />
+    <Compile Include="MobileTelcomNumberType.cs" />
+    <Compile Include="NumericValueType.cs" />
+    <Compile Include="_Publication\OtherPublicationType.cs" />
+    <Compile Include="_Patent\PatentDescriptionType.cs" />
+    <Compile Include="_Patent\PatentDescriptionTypePatentDetail.cs" />
+    <Compile Include="_Patent\PatentDescriptionTypePatentDetailIssuingAuthority.cs" />
+    <Compile Include="_Patent\PatentDescriptionTypePatentDetailPatentMilestone.cs" />
+    <Compile Include="_Patent\PatentHistoryType.cs" />
+    <Compile Include="_Person\PersonNameType.cs" />
+    <Compile Include="_Person\PersonNameTypeAffix.cs" />
+    <Compile Include="_Person\PersonNameTypeAffixType.cs" />
+    <Compile Include="_Person\PersonNameTypeAlternateScript.cs" />
+    <Compile Include="_Person\PersonNameTypeAlternateScriptAffix.cs" />
+    <Compile Include="_Person\PersonNameTypeAlternateScriptAffixType.cs" />
+    <Compile Include="_Person\PersonNameTypeAlternateScriptFamilyName.cs" />
+    <Compile Include="_Person\PersonNameTypeAlternateScriptFamilyNamePrimary.cs" />
+    <Compile Include="_Person\PersonNameTypeFamilyName.cs" />
+    <Compile Include="_Person\PersonNameTypeFamilyNamePrimary.cs" />
+    <Compile Include="_Postal\PostalAddressType.cs" />
+    <Compile Include="_Postal\PostalAddressTypeDeliveryAddress.cs" />
+    <Compile Include="_Postal\PostalAddressTypeRecipient.cs" />
+    <Compile Include="_Postal\PostalAddressTypeType.cs" />
+    <Compile Include="_Publication\PublicationHistoryType.cs" />
+    <Compile Include="_Publication\PublicationHistoryTypeFormattedPublicationDescription.cs" />
+    <Compile Include="_Military\RankAchievedType.cs" />
+    <Compile Include="ResumeDocument.cs" />
+    <Compile Include="EntityIdType.cs" />
+    <Compile Include="XmlNamespaces.cs" />
+    <Compile Include="_Education\SchoolDataType.cs" />
+    <Compile Include="_Education\SchoolOrInstitutionType.cs" />
+    <Compile Include="_Education\SchoolOrInstitutionTypeDegree.cs" />
+    <Compile Include="_Education\SchoolOrInstitutionTypeLocationSummary.cs" />
+    <Compile Include="_Education\SchoolOrInstitutionTypeOrganizationUnit.cs" />
+    <Compile Include="_Education\SchoolOrInstitutionTypeOrganizationUnitAttendanceStatus.cs" />
+    <Compile Include="_Education\SchoolTypeType.cs" />
+    <Compile Include="SepContactInfoType.cs" />
+    <Compile Include="StaffingSupportingMaterialsType.cs" />
+    <Compile Include="StaffingSupportingMaterialsTypeAttachmentReference.cs" />
+    <Compile Include="StringValue.cs" />
+    <Compile Include="StructuredXmlResume.cs" />
+    <Compile Include="TelcomNumberType.cs" />
+    <Compile Include="UserAreaType.cs" />
+    <Compile Include="SharpResumeException.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="Validation\ValidationHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\PermissionsHelper.cs" />
+    <Compile Include="Validation\XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="SharpResume.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resume.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SharpResume.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_build\SharpResume.dll.build.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>REM xcopy $(SolutionDir)..\_Common\SharpResume.License.txt $(TargetDir) /V /C /F /G /R /H /K /Y /Z</PreBuildEvent>
+  </PropertyGroup>
+</Project>

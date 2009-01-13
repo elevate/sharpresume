@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<project name="SharpResume.FrogsBrain" default="build" basedir=".">
+    <target name="build">
+        <echo message="Hello World!" />
+    </target>
+</project>
