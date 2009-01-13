@@ -41,7 +41,7 @@ using System.Security.Permissions;
 [assembly: AssemblyVersion("0.0.0.0")]
 [assembly: AssemblyFileVersion("0.0.0.0")]
 [assembly: CLSCompliant(true)]
-[assembly: NeutralResourcesLanguage("en")]
+[assembly: NeutralResourcesLanguage("en-US")]
 
 //ms-help: //MS.VSCC.v80/MS.MSDN.v80/MS.NETDEVFX.v20.en/cpref11/html/T_System_Security_AllowPartiallyTrustedCallersAttribute.htm
 

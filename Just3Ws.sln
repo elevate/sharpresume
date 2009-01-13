@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpResume.Builder", "SharpResume.Builder\SharpResume.Builder.csproj", "{67109AD9-B4BD-4815-B292-1E04A0609F98}"
 EndProject
 Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -30,17 +34,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs03.codeplex.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SharpResume\\SharpResume.csproj
-		SccProjectName1 = SharpResume
-		SccLocalPath1 = SharpResume
-		SccProjectUniqueName2 = SharpResume.Test\\SharpResume.Test.csproj
-		SccProjectName2 = SharpResume.Test
-		SccLocalPath2 = SharpResume.Test
 	EndGlobalSection
 EndGlobal
