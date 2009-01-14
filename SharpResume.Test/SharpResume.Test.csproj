@@ -73,7 +73,11 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ResumeDocumentTests.cs" />
@@ -90,8 +94,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="SerializationTestHelper.cs" />
+    <Compile Include="ValidateTestData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SharpResume.Test.Data\SharpResume.Test.Data.vbproj">
+      <Project>{6A122D0A-91D4-4985-A161-8B5157B7D1E2}</Project>
+      <Name>SharpResume.Test.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SharpResume\SharpResume.csproj">
       <Project>{9941916A-0F69-4568-87F8-BA1F8E5C9CAF}</Project>
       <Name>SharpResume</Name>

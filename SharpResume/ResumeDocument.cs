@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
@@ -25,14 +26,14 @@ namespace Just3Ws.SharpResume
     /// </summary>
     /// <value>The distribution guidelines.</value>
     [XmlElement(ElementName = "DistributionGuidelines")]
-    public DistributionGuidelinesType DistributionGuidelines { get; set; }
+    public List<DistributionGuidelinesNode> DistributionGuidelines { get; set; }
 
     /// <summary>
     /// Gets or sets the structured XML resume.
     /// </summary>
     /// <value>The structured XML resume.</value>
     [XmlElement(ElementName = "StructuredXMLResume")]
-    public StructuredXmlResumeType StructuredXmlResume { get; set; }
+    public List<StructuredXmlResumeType> StructuredXmlResume { get; set; }
 
     /// <summary>
     /// Gets or sets the non XML resume.

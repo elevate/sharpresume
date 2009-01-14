@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
@@ -10,9 +9,8 @@ namespace Just3Ws.SharpResume
   [DebuggerStepThrough]
   [DesignerCategory(StringHelper.SharpResumeCorrectSpelling)]
   [XmlType(AnonymousType = true)]
-  public class DistributionGuidelinesTypeDistributeTo : DistributionType
+  public class DistributionGuidelinesTypeDistributeTo : DistributionNode
   {
-    [XmlElement("ContactMethod")]
-    public List<ContactMethodType> ContactMethod;
+    [XmlElement("ContactMethod")] public ContactMethodType ContactMethod;
   }
 }

@@ -22,8 +22,7 @@ namespace Just3Ws.SharpResume.Test
       Assert.IsNull(entityIdType.IdValue, "The object is not null.");
       //entityIdType.IdValue = new EntityIdTypeIdValue[1];
       entityIdType.IdValue.Add(new EntityIdTypeIdValue());
-      entityIdType.IdValue[0] = new EntityIdTypeIdValue();
-      entityIdType.IdValue[0].Value = actual;
+      entityIdType.IdValue[0] = new EntityIdTypeIdValue {Value = actual};
       Assert.IsTrue(0 == string.Compare(entityIdType.IdValue[0].Value, actual, false));
       Assert.IsNull(((ISharpResumeObject) entityIdType).Parent, "The object is not null.");
     }

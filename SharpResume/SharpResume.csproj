@@ -92,9 +92,9 @@
     <Compile Include="_Competency\CompetencyTypeTaxonomyId.cs" />
     <Compile Include="CredentialType.cs" />
     <Compile Include="CredentialTypeEffectiveDate.cs" />
-    <Compile Include="DistributionGuidelinesType.cs" />
+    <Compile Include="DistributionGuidelinesNode.cs" />
     <Compile Include="DistributionGuidelinesTypeDistributeTo.cs" />
-    <Compile Include="DistributionType.cs" />
+    <Compile Include="DistributionNode.cs" />
     <Compile Include="EntityIdTypeIdValue.cs" />
     <Compile Include="IssuingAuthorityType.cs" />
     <Compile Include="Language.cs" />

@@ -9,7 +9,7 @@ namespace Just3Ws.SharpResume
   [DebuggerStepThrough]
   [DesignerCategory(StringHelper.SharpResumeCorrectSpelling)]
   [XmlType(Namespace = XmlNamespaces.HRXmlNamespace25)]
-  public class DistributionType
+  public class DistributionNode
   {
     public EntityIdType Id;
 

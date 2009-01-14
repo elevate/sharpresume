@@ -18,6 +18,6 @@ namespace Just3Ws.SharpResume
     public string id;
 
     [XmlAttribute]
-    public string idOwner;
+    public string IdOwner;
   }
 }

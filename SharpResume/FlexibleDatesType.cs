@@ -17,12 +17,13 @@ namespace Just3Ws.SharpResume
     [XmlAttribute]
     public string dateDescription;
 
-    [XmlElement("AnyDate", typeof (string))]
-    [XmlElement("MonthDay", typeof (string), DataType = "gMonthDay")]
-    [XmlElement("StringDate", typeof (string))]
-    [XmlElement("Year", typeof (string), DataType = "gYear")]
-    [XmlElement("YearMonth", typeof (string), DataType = "gYearMonth")]
-    [XmlChoiceIdentifier("ItemElementName")]
+    //[XmlElement("AnyDate", typeof (string))]
+    //[XmlElement("MonthDay", typeof (string), DataType = "gMonthDay")]
+    //[XmlElement("StringDate", typeof (string))]
+    //[XmlElement("Year", typeof (string), DataType = "gYear")]
+    //[XmlElement("YearMonth", typeof (string), DataType = "gYearMonth")]
+    //[XmlChoiceIdentifier("ItemElementName")]
+    [XmlIgnore]
     public string Item;
 
     [XmlIgnore]

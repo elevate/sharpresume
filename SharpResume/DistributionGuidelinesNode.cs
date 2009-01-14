@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
@@ -13,12 +12,10 @@ namespace Just3Ws.SharpResume
   [DebuggerStepThrough]
   [DesignerCategory(StringHelper.SharpResumeCorrectSpelling)]
   [XmlType(Namespace = XmlNamespaces.HRXmlNamespace25)]
-  public class DistributionGuidelinesType
+  public class DistributionGuidelinesNode
   {
-    [XmlElement("DistributeTo")]
-    public List<DistributionGuidelinesTypeDistributeTo> DistributeTo;
+    [XmlElement("DistributeTo")] public DistributionGuidelinesTypeDistributeTo DistributeTo;
 
-    [XmlElement("DoNotDistributeTo")]
-    public List<DistributionType> DoNotDistributeTo;
+    [XmlElement("DoNotDistributeTo")] public DistributionNode DoNotDistributeTo;
   }
 }
