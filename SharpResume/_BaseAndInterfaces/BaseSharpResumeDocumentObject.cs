@@ -1,8 +1,12 @@
+#region
+
 using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Xml.Schema;
 using System.Xml.Serialization;
+
+#endregion
 
 namespace Just3Ws.SharpResume
 {
