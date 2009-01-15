@@ -1,9 +1,13 @@
+#region
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.Xml.Serialization;
+
+#endregion
 
 namespace Just3Ws.SharpResume
 {
@@ -95,7 +99,7 @@ namespace Just3Ws.SharpResume
           {
             return false;
           }
-          for (int i = 0; i < ResumeId.IdValue.Count; ++i)
+          for (var i = 0; i < ResumeId.IdValue.Count; ++i)
           {
             if (0 ==
                 string.Compare(ResumeId.IdValue[i].Value, other.ResumeId.IdValue[i].Value, false,

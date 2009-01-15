@@ -1,6 +1,10 @@
+#region
+
 using System;
 using System.Runtime.Serialization;
 using NLog;
+
+#endregion
 
 namespace Just3Ws.SharpResume
 {
