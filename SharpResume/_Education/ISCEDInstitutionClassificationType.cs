@@ -1,5 +1,9 @@
+#region
+
 using System;
 using System.Xml.Serialization;
+
+#endregion
 
 namespace Just3Ws.SharpResume
 {
