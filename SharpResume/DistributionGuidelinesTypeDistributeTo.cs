@@ -1,3 +1,8 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
 #region
 
 using System;
@@ -15,6 +20,7 @@ namespace Just3Ws.SharpResume
   [XmlType(AnonymousType = true)]
   public class DistributionGuidelinesTypeDistributeTo : DistributionNode
   {
-    [XmlElement("ContactMethod")] public ContactMethodType ContactMethod;
+    [XmlElement("ContactMethod")]
+    public ContactMethodType ContactMethod;
   }
 }

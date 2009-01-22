@@ -1,3 +1,8 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
 #region
 
 using System;
@@ -37,7 +42,7 @@ namespace Just3Ws.SharpResume
     /// <param name="parent">The parent.</param>
     protected BaseSharpResumeObject(ISharpResumeObject parent)
     {
-      _parent = parent;
+      this._parent = parent;
     }
 
     #region IComparable<T> Members
@@ -51,7 +56,7 @@ namespace Just3Ws.SharpResume
     /// </returns>
     public int CompareTo(T other)
     {
-      return Equals(other) ? 0 : 1;
+      return this.Equals(other) ? 0 : 1;
     }
 
     #endregion
@@ -77,13 +82,13 @@ namespace Just3Ws.SharpResume
     /// <value>
     /// 	<c>true</c> if this instance has parent; otherwise, <c>false</c>.
     /// </value>
-    public bool HasParent { get { return _parent == null; } }
+    public bool HasParent { get { return this._parent == null; } }
 
     /// <summary>
     /// Gets the parent.
     /// </summary>
     /// <value>The parent.</value>
-    public ISharpResumeObject Parent { get { return _parent; } }
+    public ISharpResumeObject Parent { get { return this._parent; } }
 
     #endregion
 
@@ -135,7 +140,7 @@ namespace Just3Ws.SharpResume
       {
         return false;
       }
-      return Equals((T) obj);
+      return this.Equals((T) obj);
     }
 
     /// <summary>

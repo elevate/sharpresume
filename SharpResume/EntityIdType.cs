@@ -1,3 +1,8 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
 #region
 
 using System;
@@ -25,7 +30,7 @@ namespace Just3Ws.SharpResume
     /// </summary>
     public EntityIdType()
     {
-      IdValue = new List<EntityIdTypeIdValue>();
+      this.IdValue = new List<EntityIdTypeIdValue>();
     }
 
     /// <summary>

@@ -1,3 +1,8 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
 #region
 
 using System;
@@ -44,13 +49,13 @@ namespace Just3Ws.SharpResume
     {
       get
       {
-        if (_serializerNamespaces == null)
+        if (this._serializerNamespaces == null)
         {
-          _serializerNamespaces = new XmlSerializerNamespaces();
-          _serializerNamespaces.Add("xsi", XmlSchema.InstanceNamespace);
+          this._serializerNamespaces = new XmlSerializerNamespaces();
+          this._serializerNamespaces.Add("xsi", XmlSchema.InstanceNamespace);
           //unfortunately, we can't add the xsi:schemaLocation here, it has to be done in a with an attribute and field, unless someone knows a better way.
         }
-        return _serializerNamespaces;
+        return this._serializerNamespaces;
       }
     }
   }

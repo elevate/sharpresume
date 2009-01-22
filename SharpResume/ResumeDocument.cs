@@ -1,3 +1,8 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
 #region
 
 using System;
@@ -67,42 +72,42 @@ namespace Just3Ws.SharpResume
       {
         return false;
       }
-      if (ResumeId == null && other.ResumeId == null)
+      if (this.ResumeId == null && other.ResumeId == null)
       {
         return true;
       }
-      if (ResumeId == null && other.ResumeId != null)
+      if (this.ResumeId == null && other.ResumeId != null)
       {
         return false;
       }
-      if (ResumeId != null && other.ResumeId == null)
+      if (this.ResumeId != null && other.ResumeId == null)
       {
         return false;
       }
-      if (ResumeId != null && other.ResumeId != null)
+      if (this.ResumeId != null && other.ResumeId != null)
       {
-        if (ResumeId.IdValue == null && other.ResumeId.IdValue == null)
+        if (this.ResumeId.IdValue == null && other.ResumeId.IdValue == null)
         {
           return true;
         }
-        if (ResumeId.IdValue == null && other.ResumeId.IdValue != null)
+        if (this.ResumeId.IdValue == null && other.ResumeId.IdValue != null)
         {
           return false;
         }
-        if (ResumeId.IdValue != null && other.ResumeId.IdValue == null)
+        if (this.ResumeId.IdValue != null && other.ResumeId.IdValue == null)
         {
           return false;
         }
-        if (ResumeId.IdValue != null && other.ResumeId.IdValue != null)
+        if (this.ResumeId.IdValue != null && other.ResumeId.IdValue != null)
         {
-          if (ResumeId.IdValue.Count != other.ResumeId.IdValue.Count)
+          if (this.ResumeId.IdValue.Count != other.ResumeId.IdValue.Count)
           {
             return false;
           }
-          for (var i = 0; i < ResumeId.IdValue.Count; ++i)
+          for (var i = 0; i < this.ResumeId.IdValue.Count; ++i)
           {
             if (0 ==
-                string.Compare(ResumeId.IdValue[i].Value, other.ResumeId.IdValue[i].Value, false,
+                string.Compare(this.ResumeId.IdValue[i].Value, other.ResumeId.IdValue[i].Value, false,
                                CultureInfo.CurrentCulture))
             {
               return false;
