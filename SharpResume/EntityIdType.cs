@@ -23,7 +23,7 @@ namespace Just3Ws.SharpResume
   [DesignerCategory(StringHelper.SharpResumeCorrectSpelling)]
   [XmlType(Namespace = XmlNamespaces.HRXmlNamespace25)]
   [XmlRoot("CompetencyId", Namespace = XmlNamespaces.HRXmlNamespace25, IsNullable = false)]
-  public class EntityIdType : BaseSharpResumeObject<EntityIdType>
+  public class EntityIdType : SharpResumeObject<EntityIdType>
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="EntityIdType"/> class.

@@ -20,11 +20,11 @@ namespace Just3Ws.SharpResume
   /// </summary>
   [Serializable]
   [DebuggerStepThrough]
-  public abstract class BaseSharpResumeDocumentObject<T> : BaseSharpResumeObject<T> where T : ISharpResumeObject
+  public abstract class SharpResumeDocumentObject<T> : SharpResumeObject<T> where T : ISharpResumeObject
 
   {
     [NonSerialized]
-    private XmlSerializerNamespaces _serializerNamespaces;
+    private XmlSerializerNamespaces serializerNamespaces;
 
     /// <summary>
     /// If you overwrite the XmlLanguage and the application won't validate, then you have nobody to blame but yourself.  For some reason it won't write the attribute if it's a property or read-only.
@@ -49,13 +49,13 @@ namespace Just3Ws.SharpResume
     {
       get
       {
-        if (this._serializerNamespaces == null)
+        if (this.serializerNamespaces == null)
         {
-          this._serializerNamespaces = new XmlSerializerNamespaces();
-          this._serializerNamespaces.Add("xsi", XmlSchema.InstanceNamespace);
+          this.serializerNamespaces = new XmlSerializerNamespaces();
+          this.serializerNamespaces.Add("xsi", XmlSchema.InstanceNamespace);
           //unfortunately, we can't add the xsi:schemaLocation here, it has to be done in a with an attribute and field, unless someone knows a better way.
         }
-        return this._serializerNamespaces;
+        return this.serializerNamespaces;
       }
     }
   }

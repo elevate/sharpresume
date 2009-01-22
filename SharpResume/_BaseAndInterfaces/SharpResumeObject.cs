@@ -19,7 +19,7 @@ namespace Just3Ws.SharpResume
   /// <typeparam name="T"></typeparam>
   [Serializable]
   [DebuggerStepThrough]
-  public abstract class BaseSharpResumeObject<T> : IComparable<T>, IEquatable<T>, ISharpResumeObject
+  public abstract class SharpResumeObject<T> : IComparable<T>, IEquatable<T>, ISharpResumeObject
     where T : ISharpResumeObject
   {
     /// <summary>
@@ -30,17 +30,17 @@ namespace Just3Ws.SharpResume
     private readonly ISharpResumeObject _parent;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="BaseSharpResumeObject{T}"/> class.
+    /// Initializes a new instance of the <see cref="SharpResumeObject{T}"/> class.
     /// </summary>
-    protected BaseSharpResumeObject() : this(null)
+    protected SharpResumeObject() : this(null)
     {
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="BaseSharpResumeObject{T}"/> class.
+    /// Initializes a new instance of the <see cref="SharpResumeObject{T}"/> class.
     /// </summary>
     /// <param name="parent">The parent.</param>
-    protected BaseSharpResumeObject(ISharpResumeObject parent)
+    protected SharpResumeObject(ISharpResumeObject parent)
     {
       this._parent = parent;
     }
@@ -98,7 +98,7 @@ namespace Just3Ws.SharpResume
     /// <param name="left">The left.</param>
     /// <param name="right">The right.</param>
     /// <returns>The result of the operator.</returns>
-    public static bool operator ==(BaseSharpResumeObject<T> left, BaseSharpResumeObject<T> right)
+    public static bool operator ==(SharpResumeObject<T> left, SharpResumeObject<T> right)
     {
       // If both are null, or both are same instance, return true.
       if (ReferenceEquals(left, right))
@@ -121,7 +121,7 @@ namespace Just3Ws.SharpResume
     /// <param name="left">The left.</param>
     /// <param name="right">The right.</param>
     /// <returns>The result of the operator.</returns>
-    public static bool operator !=(BaseSharpResumeObject<T> left, BaseSharpResumeObject<T> right)
+    public static bool operator !=(SharpResumeObject<T> left, SharpResumeObject<T> right)
     {
       return !(left == right);
     }

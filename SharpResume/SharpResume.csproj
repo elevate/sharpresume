@@ -87,7 +87,7 @@
     <Compile Include="AssociationType.cs" />
     <Compile Include="AssociationTypeRole.cs" />
     <Compile Include="MySharpResume.cs" />
-    <Compile Include="_BaseAndInterfaces\BaseSharpResumeDocumentObject.cs" />
+    <Compile Include="_BaseAndInterfaces\SharpResumeDocumentObject.cs" />
     <Compile Include="_Competency\CompetencyType.cs" />
     <Compile Include="_Competency\CompetencyTypeCompetencyEvidence.cs" />
     <Compile Include="_Competency\CompetencyTypeCompetencyEvidenceEvidenceId.cs" />
@@ -127,7 +127,7 @@
     <Compile Include="_Employment\VerificationType.cs" />
     <Compile Include="_Employment\VerificationTypeContactInfo.cs" />
     <Compile Include="_Publication\ArticleType.cs" />
-    <Compile Include="_BaseAndInterfaces\BaseSharpResumeObject.cs" />
+    <Compile Include="_BaseAndInterfaces\SharpResumeObject.cs" />
     <Compile Include="BasicBibliographicRecordType.cs" />
     <Compile Include="BasicBibliographicRecordTypeName.cs" />
     <Compile Include="_Publication\BookType.cs" />

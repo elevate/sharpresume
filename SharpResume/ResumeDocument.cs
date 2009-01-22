@@ -21,7 +21,7 @@ namespace Just3Ws.SharpResume
   [DesignerCategory(StringHelper.SharpResumeCorrectSpelling)]
   [XmlType(AnonymousType = true)]
   [XmlRoot(ElementName = "Resume", Namespace = XmlNamespaces.HRXmlNamespace25, IsNullable = false)]
-  public class ResumeDocument : BaseSharpResumeDocumentObject<ResumeDocument>
+  public class ResumeDocument : SharpResumeDocumentObject<ResumeDocument>
   {
     /// <summary>
     /// Gets or sets the resume id.
@@ -30,33 +30,33 @@ namespace Just3Ws.SharpResume
     [XmlElement(ElementName = "ResumeId")]
     public EntityIdType ResumeId { get; set; }
 
-    /// <summary>
-    /// Gets or sets the distribution guidelines.
-    /// </summary>
-    /// <value>The distribution guidelines.</value>
-    [XmlElement(ElementName = "DistributionGuidelines")]
-    public List<DistributionGuidelinesNode> DistributionGuidelines { get; set; }
+    ///// <summary>
+    ///// Gets or sets the distribution guidelines.
+    ///// </summary>
+    ///// <value>The distribution guidelines.</value>
+    //[XmlElement(ElementName = "DistributionGuidelines")]
+    //public List<DistributionGuidelinesNode> DistributionGuidelines { get; set; }
 
-    /// <summary>
-    /// Gets or sets the structured XML resume.
-    /// </summary>
-    /// <value>The structured XML resume.</value>
-    [XmlElement(ElementName = "StructuredXMLResume")]
-    public List<StructuredXmlResumeType> StructuredXmlResume { get; set; }
+    ///// <summary>
+    ///// Gets or sets the structured XML resume.
+    ///// </summary>
+    ///// <value>The structured XML resume.</value>
+    //[XmlElement(ElementName = "StructuredXMLResume")]
+    //public List<StructuredXmlResumeType> StructuredXmlResume { get; set; }
 
-    /// <summary>
-    /// Gets or sets the non XML resume.
-    /// </summary>
-    /// <value>The non XML resume.</value>
-    [XmlElement(ElementName = "NonXMLResume")]
-    public NonXmlResumeType NonXmlResume { get; set; }
+    ///// <summary>
+    ///// Gets or sets the non XML resume.
+    ///// </summary>
+    ///// <value>The non XML resume.</value>
+    //[XmlElement(ElementName = "NonXMLResume")]
+    //public NonXmlResumeType NonXmlResume { get; set; }
 
-    /// <summary>
-    /// Gets or sets the user area.
-    /// </summary>
-    /// <value>The user area.</value>
-    [XmlElement(ElementName = "UserArea")]
-    public UserAreaType UserArea { get; set; }
+    ///// <summary>
+    ///// Gets or sets the user area.
+    ///// </summary>
+    ///// <value>The user area.</value>
+    //[XmlElement(ElementName = "UserArea")]
+    //public UserAreaType UserArea { get; set; }
 
     /// <summary>
     /// Indicates whether the current object is equal to another object of the same type.
@@ -126,7 +126,7 @@ namespace Just3Ws.SharpResume
   //[DebuggerStepThrough]
   //[DesignerCategory( StringHelper.SharpResumeCorrectSpelling )]
   //[XmlRoot( ElementName="Resume", Namespace = HRXmlNamespaces25.XmlNamespace, IsNullable=false )]
-  //public class ResumeDocument : BaseSharpResumeObject< ResumeDocument >
+  //public class ResumeDocument : SharpResumeObject< ResumeDocument >
   //{
   //    private EntityIdType _resumeId = null;
   //    private StructuredXmlResumeType _structuredXmlResume = null;
