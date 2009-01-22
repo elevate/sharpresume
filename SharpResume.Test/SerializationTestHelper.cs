@@ -1,3 +1,10 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
+#region
+
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -5,6 +12,8 @@ using System.Xml;
 using System.Xml.Serialization;
 using NLog;
 using NUnit.Framework;
+
+#endregion
 
 namespace Just3Ws.SharpResume.Test
 {
@@ -19,6 +28,7 @@ namespace Just3Ws.SharpResume.Test
     /// <returns></returns>
     public string SerializeXmlObject(T xmlObject)
     {
+      Debugger.Break();
       log.Trace(string.Empty);
       var serializer = new XmlSerializer(typeof (T));
       var outputStream = new MemoryStream();
@@ -50,7 +60,7 @@ namespace Just3Ws.SharpResume.Test
       inputStreamWriter.Write(serializedXmlObject);
       inputStreamWriter.Flush();
       inputStream.Position = 0;
-      XmlReader inputReader = XmlReader.Create(inputStream, null);
+      var inputReader = XmlReader.Create(inputStream, null);
       return DeserializeXmlObject(inputReader);
     }
 
@@ -64,13 +74,11 @@ namespace Just3Ws.SharpResume.Test
       log.Trace(string.Empty);
       var serializer = new XmlSerializer(typeof (ResumeDocument));
       Assert.IsTrue(serializer.CanDeserialize(inputReader));
-      var events = new XmlDeserializationEvents
-                     {
-                       OnUnknownAttribute = Serializer_OnUnknownAttribute,
-                       OnUnknownElement = Serializer_OnUnknownElement,
-                       OnUnknownNode = Serializer_OnUnknownNode,
-                       OnUnreferencedObject = Serializer_OnUnreferencedObject
-                     };
+      var events = new XmlDeserializationEvents();
+      events.OnUnknownAttribute = this.Serializer_OnUnknownAttribute;
+      events.OnUnknownElement = this.Serializer_OnUnknownElement;
+      events.OnUnknownNode = this.Serializer_OnUnknownNode;
+      events.OnUnreferencedObject = this.Serializer_OnUnreferencedObject;
       var deserialized = serializer.Deserialize(inputReader, events);
       Assert.IsNotNull(deserialized);
       return (T) deserialized;

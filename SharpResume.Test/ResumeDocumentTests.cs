@@ -1,8 +1,17 @@
+// <license>
+// © 2009, Business Decisions, Inc.
+// All Rights Reserved.
+// </license>
+
+#region
+
 using System;
 using System.IO;
 using System.Xml;
 using NLog;
 using NUnit.Framework;
+
+#endregion
 
 namespace Just3Ws.SharpResume.Test
 {
@@ -18,13 +27,13 @@ namespace Just3Ws.SharpResume.Test
       try
       {
         var serializedFileName = string.Format("SerializedResumeExample {0}.xml",
-                                                  DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"));
+                                               DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"));
         //dateformat 2007-May-21-123059
         log.Trace("Using temporary serialized object in file \"{0}\".", serializedFileName);
         Assert.IsTrue(File.Exists("ResumeExample.xml"));
-        var resumeDocument1 = DeserializeXmlObject(XmlReader.Create("ResumeExample.xml"));
+        var resumeDocument1 = this.DeserializeXmlObject(XmlReader.Create("ResumeExample.xml"));
         Assert.IsNotNull(resumeDocument1, "The deserialized object is null.");
-        var serializedResume1 = SerializeXmlObject(resumeDocument1);
+        var serializedResume1 = this.SerializeXmlObject(resumeDocument1);
         if (File.Exists(serializedFileName))
         {
           File.Delete(serializedFileName);
@@ -37,7 +46,11 @@ namespace Just3Ws.SharpResume.Test
       catch (Exception ex)
       {
         log.TraceException("Exception in TestLoadResumeExample test.", ex);
-        Assert.Fail();
+        if (null != ex.InnerException)
+        {
+          log.TraceException("Inner exception in TestLoadResumeExample test.", ex.InnerException);
+        }
+        throw;
       }
     }
 
@@ -57,7 +70,7 @@ namespace Just3Ws.SharpResume.Test
       resumeDocument1.ResumeId.IdValue.Add(new EntityIdTypeIdValue());
       resumeDocument1.ResumeId.IdValue[0] = new EntityIdTypeIdValue {Value = "123"};
       //resumeDocument1.StructuredXmlResume.Objective = "To rule the world.";
-      var serializedResume1 = SerializeXmlObject(resumeDocument1);
+      var serializedResume1 = this.SerializeXmlObject(resumeDocument1);
       Assert.IsNotEmpty(serializedResume1, "The serialized ResumeDocument is empty.");
       Console.Out.WriteLine(serializedResume1);
 
@@ -71,7 +84,7 @@ namespace Just3Ws.SharpResume.Test
       resumeDocument2.ResumeId.IdValue[0] = new EntityIdTypeIdValue {Value = "123"};
 
       //deflate
-      var serializedResume2 = SerializeXmlObject(resumeDocument2);
+      var serializedResume2 = this.SerializeXmlObject(resumeDocument2);
 
       Assert.IsNotEmpty(serializedResume2, "The serialized resume is empty.");
       Console.Out.WriteLine(serializedResume2);
