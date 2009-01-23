@@ -81,8 +81,16 @@ namespace Just3Ws.SharpResume.Test
       Assert.IsNotEmpty(serializedResume2, "The serialized resume is empty.");
       Console.Out.WriteLine(serializedResume2);
 
-      Assert.IsTrue(0 == string.Compare(serializedResume1, serializedResume2, false),
+      var x1 = serializedResume1;
+      var x2 = serializedResume2;
+      var c = string.Compare(x1, x2, false);
+      Assert.IsTrue(0 == c,
                     "The serialized-deserialized-serialized results varied.");
+
+      Console.Out.WriteLine(resumeDocument1.Equals(resumeDocument2));
+
+      Console.Out.WriteLine(resumeDocument1.CompareTo(resumeDocument2));
+
       Assert.AreEqual(resumeDocument1, resumeDocument2, "The serialized-deserialized object comparison results varied.");
     }
   }

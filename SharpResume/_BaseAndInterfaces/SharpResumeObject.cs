@@ -22,7 +22,7 @@ namespace Just3Ws.SharpResume
     /// </summary>
     protected static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
-    private readonly ISharpResumeObject _parent;
+    private readonly ISharpResumeObject parent;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="SharpResumeObject{T}"/> class.
@@ -37,7 +37,7 @@ namespace Just3Ws.SharpResume
     /// <param name="parent">The parent.</param>
     protected SharpResumeObject(ISharpResumeObject parent)
     {
-      this._parent = parent;
+      this.parent = parent;
     }
 
     #region IComparable<T> Members
@@ -77,13 +77,13 @@ namespace Just3Ws.SharpResume
     /// <value>
     /// 	<c>true</c> if this instance has parent; otherwise, <c>false</c>.
     /// </value>
-    public bool HasParent { get { return this._parent == null; } }
+    public bool HasParent { get { return this.parent == null; } }
 
     /// <summary>
     /// Gets the parent.
     /// </summary>
     /// <value>The parent.</value>
-    public ISharpResumeObject Parent { get { return this._parent; } }
+    public ISharpResumeObject Parent { get { return this.parent; } }
 
     #endregion
 
@@ -102,12 +102,7 @@ namespace Just3Ws.SharpResume
       }
 
       // If one is null, but not both, return false.
-      if (((object) left == null) || ((object) right == null))
-      {
-        return false;
-      }
-
-      return true;
+      return ((object) left != null) && ((object) right != null);
     }
 
     /// <summary>
