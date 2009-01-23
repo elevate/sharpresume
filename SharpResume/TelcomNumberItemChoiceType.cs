@@ -1,8 +1,3 @@
-// <license>
-// © 2009, Business Decisions, Inc.
-// All Rights Reserved.
-// </license>
-
 #region
 
 using System;
@@ -17,7 +12,7 @@ namespace Just3Ws.SharpResume
   /// </summary>
   [Serializable]
   [XmlType(Namespace = XmlNamespaces.HRXmlNamespace25, IncludeInSchema = false)]
-  public enum ItemsChoiceType
+  public enum TelcomNumberItemChoiceType
   {
     /// <summary>
     /// 

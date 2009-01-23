@@ -1,7 +1,3 @@
-// <license>
-// © 2009, Business Decisions, Inc.
-// All Rights Reserved.
-// </license>
 namespace Just3Ws.SharpResume
 {
   /// <summary>

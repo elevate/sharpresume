@@ -1,12 +1,6 @@
-// <license>
-// © 2009, Business Decisions, Inc.
-// All Rights Reserved.
-// </license>
-
 #region
 
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
@@ -28,23 +22,24 @@ namespace Just3Ws.SharpResume.Test
     /// <returns></returns>
     public string SerializeXmlObject(T xmlObject)
     {
-      Debugger.Break();
+      //Debugger.Break();
       log.Trace(string.Empty);
-      var serializer = new XmlSerializer(typeof (T));
-      var outputStream = new MemoryStream();
       try
       {
+        var serializer = new XmlSerializer(typeof (T));
+        var outputStream = new MemoryStream();
         serializer.Serialize(outputStream, xmlObject); //, xmlObject.SerializerNamespaces );
+        outputStream.Flush();
+        outputStream.Position = 0;
+
+        return (new StreamReader(outputStream, true)).ReadToEnd();
       }
       catch (InvalidOperationException ioe)
       {
         log.ErrorException("There was an error attempting to serialize the object.", ioe);
-        Debugger.Break();
+        //Debugger.Break();
+        throw;
       }
-      outputStream.Flush();
-      outputStream.Position = 0;
-
-      return (new StreamReader(outputStream, true)).ReadToEnd();
     }
 
     /// <summary>
@@ -92,7 +87,7 @@ namespace Just3Ws.SharpResume.Test
     public void Serializer_OnUnknownAttribute(object sender, XmlAttributeEventArgs args)
     {
       log.Trace(string.Empty);
-      Debugger.Break();
+      //Debugger.Break();
       log.Trace("OnUnknownAttribute");
       log.Trace(args.Attr.Name);
       Assert.Fail("Failed because of unknown attribute.");
@@ -106,7 +101,7 @@ namespace Just3Ws.SharpResume.Test
     public void Serializer_OnUnknownElement(object sender, XmlElementEventArgs args)
     {
       log.Trace(string.Empty);
-      Debugger.Break();
+      //Debugger.Break();
       log.Trace("OnUnknownElement");
       log.Trace(args.Element.Name);
       Assert.Fail("Failed because of unknown element.");
@@ -120,7 +115,7 @@ namespace Just3Ws.SharpResume.Test
     public void Serializer_OnUnknownNode(object sender, XmlNodeEventArgs args)
     {
       log.Trace(string.Empty);
-      Debugger.Break();
+      //Debugger.Break();
       log.Trace("OnUnknownNode");
       log.Trace(args.Name);
       Assert.Fail("Failed because of unknown node.");
@@ -134,7 +129,7 @@ namespace Just3Ws.SharpResume.Test
     public void Serializer_OnUnreferencedObject(object sender, UnreferencedObjectEventArgs args)
     {
       log.Trace(string.Empty);
-      Debugger.Break();
+      //Debugger.Break();
       log.Trace("OnUnreferencedObject");
       Assert.Fail("Failed because of unreferenced object.");
     }

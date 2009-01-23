@@ -156,8 +156,8 @@
     <Compile Include="InternetDomainNameType.cs" />
     <Compile Include="_Education\ISCEDInstitutionClassificationType.cs" />
     <Compile Include="_BaseAndInterfaces\ISharpResumeObject.cs" />
-    <Compile Include="ItemChoiceType.cs" />
-    <Compile Include="ItemsChoiceType.cs" />
+    <Compile Include="YearMonthItemChoiceType.cs" />
+    <Compile Include="TelcomNumberItemChoiceType.cs" />
     <Compile Include="_Education\MajorType.cs" />
     <Compile Include="MeasureValueType.cs" />
     <Compile Include="_Military\MilitaryHistoryType.cs" />
@@ -230,10 +230,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Resume.xsd">
-      <SubType>Designer</SubType>
+      <SubType>
+      </SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="SharpResume.snk" />
+    <None Include="xml.xsd" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

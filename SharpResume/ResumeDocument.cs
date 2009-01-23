@@ -1,8 +1,3 @@
-// <license>
-// © 2009, Business Decisions, Inc.
-// All Rights Reserved.
-// </license>
-
 #region
 
 using System;
@@ -30,33 +25,33 @@ namespace Just3Ws.SharpResume
     [XmlElement(ElementName = "ResumeId")]
     public EntityIdType ResumeId { get; set; }
 
-    ///// <summary>
-    ///// Gets or sets the distribution guidelines.
-    ///// </summary>
-    ///// <value>The distribution guidelines.</value>
-    //[XmlElement(ElementName = "DistributionGuidelines")]
-    //public List<DistributionGuidelinesNode> DistributionGuidelines { get; set; }
+    /// <summary>
+    /// Gets or sets the distribution guidelines.
+    /// </summary>
+    /// <value>The distribution guidelines.</value>
+    [XmlElement(ElementName = "DistributionGuidelines")]
+    public List<DistributionGuidelinesNode> DistributionGuidelines { get; set; }
 
-    ///// <summary>
-    ///// Gets or sets the structured XML resume.
-    ///// </summary>
-    ///// <value>The structured XML resume.</value>
-    //[XmlElement(ElementName = "StructuredXMLResume")]
-    //public List<StructuredXmlResumeType> StructuredXmlResume { get; set; }
+    /// <summary>
+    /// Gets or sets the structured XML resume.
+    /// </summary>
+    /// <value>The structured XML resume.</value>
+    [XmlElement(ElementName = "StructuredXMLResume")]
+    public List<StructuredXmlResumeType> StructuredXmlResume { get; set; }
 
-    ///// <summary>
-    ///// Gets or sets the non XML resume.
-    ///// </summary>
-    ///// <value>The non XML resume.</value>
-    //[XmlElement(ElementName = "NonXMLResume")]
-    //public NonXmlResumeType NonXmlResume { get; set; }
+    /// <summary>
+    /// Gets or sets the non XML resume.
+    /// </summary>
+    /// <value>The non XML resume.</value>
+    [XmlElement(ElementName = "NonXMLResume")]
+    public NonXmlResumeType NonXmlResume { get; set; }
 
-    ///// <summary>
-    ///// Gets or sets the user area.
-    ///// </summary>
-    ///// <value>The user area.</value>
-    //[XmlElement(ElementName = "UserArea")]
-    //public UserAreaType UserArea { get; set; }
+    /// <summary>
+    /// Gets or sets the user area.
+    /// </summary>
+    /// <value>The user area.</value>
+    [XmlElement(ElementName = "UserArea")]
+    public UserAreaType UserArea { get; set; }
 
     /// <summary>
     /// Indicates whether the current object is equal to another object of the same type.
