@@ -23,12 +23,13 @@ namespace Just3Ws.SharpResume.Test
       //EntityIdType entityIdType = new EntityIdType( actual );
       var entityIdType = new EntityIdType();
       Assert.IsNotNull(entityIdType, "The object is null.");
-      Assert.IsNull(entityIdType.IdValue, "The object is not null.");
+      Assert.IsEmpty(entityIdType.IdValue, "The object is not null.");
       //entityIdType.IdValue = new EntityIdTypeIdValue[1];
       entityIdType.IdValue.Add(new EntityIdTypeIdValue());
       entityIdType.IdValue[0] = new EntityIdTypeIdValue {Value = actual};
       Assert.IsTrue(0 == string.Compare(entityIdType.IdValue[0].Value, actual, false));
-      Assert.IsNull(((ISharpResumeObject) entityIdType).Parent, "The object is not null.");
+      var parent = ((ISharpResumeObject) entityIdType).Parent;
+      Assert.IsNull(parent, "The object is not null.");
     }
 
     /// <summary>
@@ -40,7 +41,7 @@ namespace Just3Ws.SharpResume.Test
       log.Trace(string.Empty);
       var entityIdType = new EntityIdType();
       Assert.IsNotNull(entityIdType, "The object is null.");
-      Assert.IsNull(entityIdType.IdValue, "The object is not null.");
+      Assert.IsEmpty(entityIdType.IdValue, "The object is not null.");
       Assert.IsNull(((ISharpResumeObject) entityIdType).Parent, "The object is not null.");
     }
   }

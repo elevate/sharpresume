@@ -61,10 +61,8 @@ namespace Just3Ws.SharpResume.Test
       Assert.IsNotNull(resumeDocument1, "The ResumeDocument is null.");
       Assert.IsNull(((ISharpResumeObject) resumeDocument1).Parent, "The ResumeDocument.Parent is not null.");
       resumeDocument1.ResumeId = new EntityIdType();
-      //resumeDocument1.ResumeId.IdValue = new EntityIdTypeIdValue[1];
       resumeDocument1.ResumeId.IdValue.Add(new EntityIdTypeIdValue());
       resumeDocument1.ResumeId.IdValue[0] = new EntityIdTypeIdValue {Value = "123"};
-      //resumeDocument1.StructuredXmlResume.Objective = "To rule the world.";
       var serializedResume1 = this.SerializeXmlObject(resumeDocument1);
       Assert.IsNotEmpty(serializedResume1, "The serialized ResumeDocument is empty.");
       Console.Out.WriteLine(serializedResume1);
@@ -74,7 +72,6 @@ namespace Just3Ws.SharpResume.Test
       Assert.IsNotNull(resumeDocument2, "The ResumeDocument is null.");
       Assert.IsNull(((ISharpResumeObject) resumeDocument2).Parent, "The ResumeDocument.Parent is not null.");
       resumeDocument2.ResumeId = new EntityIdType();
-      //resumeDocument2.ResumeId.IdValue = new EntityIdTypeIdValue[1];
       resumeDocument2.ResumeId.IdValue.Add(new EntityIdTypeIdValue());
       resumeDocument2.ResumeId.IdValue[0] = new EntityIdTypeIdValue {Value = "123"};
 
