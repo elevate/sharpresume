@@ -1,6 +1,7 @@
 #region
 
 using System;
+using System.Collections;
 using System.Diagnostics;
 using NLog;
 
@@ -14,13 +15,13 @@ namespace Just3Ws.SharpResume
   /// <typeparam name="T"></typeparam>
   [Serializable]
   [DebuggerStepThrough]
-  public abstract class SharpResumeObject<T> : IComparable<T>, IEquatable<T>, ISharpResumeObject
+  public abstract class SharpResumeObject<T> : IComparable<T>, IEquatable<T>, ISharpResumeObject, IComparable, IComparer
     where T : ISharpResumeObject
   {
     /// <summary>
-    /// The base NLog logger instance.
+    /// The base NLog log instance.
     /// </summary>
-    protected static readonly Logger logger = LogManager.GetCurrentClassLogger();
+    protected static readonly Logger log = LogManager.GetCurrentClassLogger();
 
     private readonly ISharpResumeObject parent;
 
@@ -40,6 +41,34 @@ namespace Just3Ws.SharpResume
       this.parent = parent;
     }
 
+    #region IComparable Members
+
+    /// <summary>
+    /// Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+    /// </summary>
+    /// <param name="other">An object to compare with this instance.</param>
+    /// <returns>
+    /// A 32-bit signed integer that indicates the relative order of the objects being compared. The return value has these meanings:
+    /// Value
+    /// Meaning
+    /// Less than zero
+    /// This instance is less than <paramref name="other"/>.
+    /// Zero
+    /// This instance is equal to <paramref name="other"/>.
+    /// Greater than zero
+    /// This instance is greater than <paramref name="other"/>.
+    /// </returns>
+    /// <exception cref="T:System.ArgumentException">
+    /// 	<paramref name="other"/> is not the same type as this instance.
+    /// </exception>
+    public int CompareTo(object other)
+    {
+      Debugger.Break();
+      return this.Equals(other) ? 0 : 1;
+    }
+
+    #endregion
+
     #region IComparable<T> Members
 
     /// <summary>
@@ -51,7 +80,38 @@ namespace Just3Ws.SharpResume
     /// </returns>
     public int CompareTo(T other)
     {
+      Debugger.Break();
       return this.Equals(other) ? 0 : 1;
+    }
+
+    #endregion
+
+    #region IComparer Members
+
+    /// <summary>
+    /// Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.
+    /// </summary>
+    /// <param name="x">The first object to compare.</param>
+    /// <param name="y">The second object to compare.</param>
+    /// <returns>
+    /// Value
+    /// Condition
+    /// Less than zero
+    /// <paramref name="x"/> is less than <paramref name="y"/>.
+    /// Zero
+    /// <paramref name="x"/> equals <paramref name="y"/>.
+    /// Greater than zero
+    /// <paramref name="x"/> is greater than <paramref name="y"/>.
+    /// </returns>
+    /// <exception cref="T:System.ArgumentException">
+    /// Neither <paramref name="x"/> nor <paramref name="y"/> implements the <see cref="T:System.IComparable"/> interface.
+    /// -or-
+    /// <paramref name="x"/> and <paramref name="y"/> are of different types and neither one can handle comparisons with the other.
+    /// </exception>
+    public int Compare(object x, object y)
+    {
+      Debugger.Break();
+      return x.Equals(y) ? 0 : 1;
     }
 
     #endregion
@@ -95,6 +155,7 @@ namespace Just3Ws.SharpResume
     /// <returns>The result of the operator.</returns>
     public static bool operator ==(SharpResumeObject<T> left, SharpResumeObject<T> right)
     {
+      Debugger.Break();
       // If both are null, or both are same instance, return true.
       if (ReferenceEquals(left, right))
       {
@@ -113,24 +174,26 @@ namespace Just3Ws.SharpResume
     /// <returns>The result of the operator.</returns>
     public static bool operator !=(SharpResumeObject<T> left, SharpResumeObject<T> right)
     {
+      Debugger.Break();
       return !(left == right);
     }
 
     /// <summary>
     /// Determines whether the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>.
     /// </summary>
-    /// <param name="obj">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
+    /// <param name="other">The <see cref="T:System.Object"/> to compare with the current <see cref="T:System.Object"/>.</param>
     /// <returns>
     /// true if the specified <see cref="T:System.Object"/> is equal to the current <see cref="T:System.Object"/>; otherwise, false.
     /// </returns>
     /// <filterPriority>2</filterPriority>
-    public override bool Equals(object obj)
+    public override bool Equals(object other)
     {
-      if (obj == null || !(obj is T))
+      Debugger.Break();
+      if (other == null || !(other is T))
       {
         return false;
       }
-      return this.Equals((T) obj);
+      return this.Equals((T) other);
     }
 
     /// <summary>

@@ -62,6 +62,8 @@ namespace Just3Ws.SharpResume
     /// </returns>
     public override bool Equals(ResumeDocument other)
     {
+      Debugger.Break();
+      //log.Trace(other);
       //HACK: ugly, not good equality comparison. bad.
       if (other == null)
       {

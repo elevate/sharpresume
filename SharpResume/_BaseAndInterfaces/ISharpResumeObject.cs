@@ -1,3 +1,5 @@
+using System;
+
 namespace Just3Ws.SharpResume
 {
   /// <summary>

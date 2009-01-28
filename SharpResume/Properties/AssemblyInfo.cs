@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
 using System.Security;
-using System.Security.Permissions;
 
 #endregion
 
@@ -54,7 +53,9 @@ using System.Security.Permissions;
 //TODO: Determine correct CAS settings for #Resume library.
 ////Permission to execute and nothing else.
 
+#if !DEBUG
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
 [assembly: PermissionSet(SecurityAction.RequestOptional, Name = "Nothing")]
+#endif
 ////We need to be able to write to the file system.
 //[assembly : FileIOPermission( SecurityAction.RequestMinimum, Unrestricted = true )]
