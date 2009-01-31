@@ -63,7 +63,7 @@ namespace Just3Ws.SharpResume
     /// </exception>
     public int CompareTo(object other)
     {
-      Debugger.Break();
+      //Debugger.Break();
       return this.Equals(other) ? 0 : 1;
     }
 
@@ -80,7 +80,7 @@ namespace Just3Ws.SharpResume
     /// </returns>
     public int CompareTo(T other)
     {
-      Debugger.Break();
+      //Debugger.Break();
       return this.Equals(other) ? 0 : 1;
     }
 
@@ -110,7 +110,7 @@ namespace Just3Ws.SharpResume
     /// </exception>
     public int Compare(object x, object y)
     {
-      Debugger.Break();
+      //Debugger.Break();
       return x.Equals(y) ? 0 : 1;
     }
 
@@ -155,7 +155,7 @@ namespace Just3Ws.SharpResume
     /// <returns>The result of the operator.</returns>
     public static bool operator ==(SharpResumeObject<T> left, SharpResumeObject<T> right)
     {
-      Debugger.Break();
+      //Debugger.Break();
       // If both are null, or both are same instance, return true.
       if (ReferenceEquals(left, right))
       {
@@ -174,7 +174,7 @@ namespace Just3Ws.SharpResume
     /// <returns>The result of the operator.</returns>
     public static bool operator !=(SharpResumeObject<T> left, SharpResumeObject<T> right)
     {
-      Debugger.Break();
+      //Debugger.Break();
       return !(left == right);
     }
 
@@ -188,7 +188,7 @@ namespace Just3Ws.SharpResume
     /// <filterPriority>2</filterPriority>
     public override bool Equals(object other)
     {
-      Debugger.Break();
+      //Debugger.Break();
       if (other == null || !(other is T))
       {
         return false;
