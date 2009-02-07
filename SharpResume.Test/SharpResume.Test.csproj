@@ -102,7 +102,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SharpResume\SharpResume.csproj">
       <Project>{9941916A-0F69-4568-87F8-BA1F8E5C9CAF}</Project>
-      <Name>SharpResume</Name>
+      <Name>SharpResume %28_dependencies\sharpresume\SharpResume%29</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
