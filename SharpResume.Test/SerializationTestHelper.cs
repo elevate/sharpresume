@@ -4,7 +4,6 @@ using System;
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
-using NLog;
 using NUnit.Framework;
 
 #endregion
@@ -13,7 +12,7 @@ namespace Just3Ws.SharpResume.Test
 {
   public class SerializationTestHelper<T> where T : ISharpResumeObject
   {
-    private static readonly Logger log = LogManager.GetCurrentClassLogger();
+    public static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
     /// <summary>
     /// Serializes the resume document.
@@ -23,7 +22,7 @@ namespace Just3Ws.SharpResume.Test
     public string SerializeXmlObject(T xmlObject)
     {
       //Debugger.Break();
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       try
       {
         var serializer = new XmlSerializer(typeof (T));
@@ -36,7 +35,7 @@ namespace Just3Ws.SharpResume.Test
       }
       catch (InvalidOperationException ioe)
       {
-        log.ErrorException("There was an error attempting to serialize the object.", ioe);
+        logger.Error("There was an error attempting to serialize the object.", ioe);
         //Debugger.Break();
         throw;
       }
@@ -49,7 +48,7 @@ namespace Just3Ws.SharpResume.Test
     /// <returns></returns>
     public T DeserializeXmlObject(string serializedXmlObject)
     {
-      log.Trace(string.Empty);
+        logger.Info(string.Empty);
       var inputStream = new MemoryStream();
       var inputStreamWriter = new StreamWriter(inputStream);
       inputStreamWriter.Write(serializedXmlObject);
@@ -66,7 +65,7 @@ namespace Just3Ws.SharpResume.Test
     /// <returns></returns>
     public T DeserializeXmlObject(XmlReader inputReader)
     {
-      log.Trace(string.Empty);
+        logger.Info(string.Empty);
       var serializer = new XmlSerializer(typeof (ResumeDocument));
       Assert.IsTrue(serializer.CanDeserialize(inputReader));
       var events = new XmlDeserializationEvents();
@@ -86,10 +85,10 @@ namespace Just3Ws.SharpResume.Test
     /// <param name="args">The <see cref="System.Xml.Serialization.XmlAttributeEventArgs"/> instance containing the event data.</param>
     public void Serializer_OnUnknownAttribute(object sender, XmlAttributeEventArgs args)
     {
-      log.Trace(string.Empty);
+        logger.Info(string.Empty);
       //Debugger.Break();
-      log.Trace("OnUnknownAttribute");
-      log.Trace(args.Attr.Name);
+      logger.Info("OnUnknownAttribute");
+      logger.Info(args.Attr.Name);
       Assert.Fail("Failed because of unknown attribute.");
     }
 
@@ -100,10 +99,10 @@ namespace Just3Ws.SharpResume.Test
     /// <param name="args">The <see cref="System.Xml.Serialization.XmlElementEventArgs"/> instance containing the event data.</param>
     public void Serializer_OnUnknownElement(object sender, XmlElementEventArgs args)
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       //Debugger.Break();
-      log.Trace("OnUnknownElement");
-      log.Trace(args.Element.Name);
+      logger.Info("OnUnknownElement");
+      logger.Info(args.Element.Name);
       Assert.Fail("Failed because of unknown element.");
     }
 
@@ -114,10 +113,10 @@ namespace Just3Ws.SharpResume.Test
     /// <param name="args">The <see cref="System.Xml.Serialization.XmlNodeEventArgs"/> instance containing the event data.</param>
     public void Serializer_OnUnknownNode(object sender, XmlNodeEventArgs args)
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       //Debugger.Break();
-      log.Trace("OnUnknownNode");
-      log.Trace(args.Name);
+      logger.Info("OnUnknownNode");
+      logger.Info(args.Name);
       Assert.Fail("Failed because of unknown node.");
     }
 
@@ -128,9 +127,9 @@ namespace Just3Ws.SharpResume.Test
     /// <param name="args">The <see cref="System.Xml.Serialization.UnreferencedObjectEventArgs"/> instance containing the event data.</param>
     public void Serializer_OnUnreferencedObject(object sender, UnreferencedObjectEventArgs args)
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       //Debugger.Break();
-      log.Trace("OnUnreferencedObject");
+      logger.Info("OnUnreferencedObject");
       Assert.Fail("Failed because of unreferenced object.");
     }
 
@@ -140,7 +139,7 @@ namespace Just3Ws.SharpResume.Test
     [Test]
     public void TestBasicResumeDocument()
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       var document = new ResumeDocument();
       Assert.IsNotNull(document);
       Assert.IsNull(((ISharpResumeObject) document).Parent);

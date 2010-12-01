@@ -3,7 +3,6 @@
 using System;
 using System.IO;
 using System.Xml;
-using NLog;
 using NUnit.Framework;
 
 #endregion
@@ -13,18 +12,18 @@ namespace Just3Ws.SharpResume.Test
   [TestFixture]
   public class ResumeDocumentTests : SerializationTestHelper<ResumeDocument>
   {
-    public static readonly Logger log = LogManager.GetCurrentClassLogger();
+    public static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
     [Test]
     public void TestLoadResumeExample()
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       try
       {
         var serializedFileName = string.Format("SerializedResumeExample {0}.xml",
                                                DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"));
         //dateformat 2007-May-21-123059
-        log.Trace("Using temporary serialized object in file \"{0}\".", serializedFileName);
+        logger.InfoFormat("Using temporary serialized object in file \"{0}\".", serializedFileName);
         Assert.IsTrue(File.Exists("ResumeExample.xml"));
         var resumeDocument1 = this.DeserializeXmlObject(XmlReader.Create("ResumeExample.xml"));
         Assert.IsNotNull(resumeDocument1, "The deserialized object is null.");
@@ -40,10 +39,10 @@ namespace Just3Ws.SharpResume.Test
       }
       catch (Exception ex)
       {
-        log.TraceException("Exception in TestLoadResumeExample test.", ex);
+        logger.Error("Exception in TestLoadResumeExample test.", ex);
         if (null != ex.InnerException)
         {
-          log.TraceException("Inner exception in TestLoadResumeExample test.", ex.InnerException);
+            logger.Error("Inner exception in TestLoadResumeExample test.", ex.InnerException);
         }
         throw;
       }
@@ -55,7 +54,7 @@ namespace Just3Ws.SharpResume.Test
     [Test]
     public void TestResumeDocumentXmlSerializer()
     {
-      log.Trace(string.Empty);
+        logger.Info(string.Empty);
       //deflate
       var resumeDocument1 = new ResumeDocument();
       Assert.IsNotNull(resumeDocument1, "The ResumeDocument is null.");

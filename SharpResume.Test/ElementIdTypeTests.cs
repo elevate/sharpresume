@@ -1,6 +1,5 @@
 #region
 
-using NLog;
 using NUnit.Framework;
 
 #endregion
@@ -10,7 +9,7 @@ namespace Just3Ws.SharpResume.Test
   [TestFixture]
   public class ElementIdTypeTests : SerializationTestHelper<EntityIdType>
   {
-    public static readonly Logger log = LogManager.GetCurrentClassLogger();
+      private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
     /// <summary>
     /// Tests the basic element id type constructor initialized.
@@ -18,7 +17,7 @@ namespace Just3Ws.SharpResume.Test
     [Test]
     public void TestBasicElementIdTypeConstructorInitialized()
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       const string actual = "hello";
       //EntityIdType entityIdType = new EntityIdType( actual );
       var entityIdType = new EntityIdType();
@@ -38,7 +37,7 @@ namespace Just3Ws.SharpResume.Test
     [Test]
     public void TestBasicElementIdTypeDefault()
     {
-      log.Trace(string.Empty);
+      logger.Info(string.Empty);
       var entityIdType = new EntityIdType();
       Assert.IsNotNull(entityIdType, "The object is null.");
       Assert.IsEmpty(entityIdType.IdValue, "The object is not null.");

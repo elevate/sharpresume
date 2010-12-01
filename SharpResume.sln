@@ -1,13 +1,25 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{E0AEF121-C614-4282-8A25-AD1A6E76CC2D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpResume", "SharpResume\SharpResume.csproj", "{9941916A-0F69-4568-87F8-BA1F8E5C9CAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpResume.Test", "SharpResume.Test\SharpResume.Test.csproj", "{DBA7E36B-C423-4FF7-9DD6-0DAC77A7F379}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_build", "_build", "{E0AEF121-C614-4282-8A25-AD1A6E76CC2D}"
-EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs03.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SharpResume\\SharpResume.csproj
+		SccProjectName1 = SharpResume
+		SccLocalPath1 = SharpResume
+		SccProjectUniqueName2 = SharpResume.Test\\SharpResume.Test.csproj
+		SccProjectName2 = SharpResume.Test
+		SccLocalPath2 = SharpResume.Test
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -24,17 +36,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs03.codeplex.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = SharpResume\\SharpResume.csproj
-		SccProjectName1 = SharpResume
-		SccLocalPath1 = SharpResume
-		SccProjectUniqueName2 = SharpResume.Test\\SharpResume.Test.csproj
-		SccProjectName2 = SharpResume.Test
-		SccLocalPath2 = SharpResume.Test
 	EndGlobalSection
 EndGlobal

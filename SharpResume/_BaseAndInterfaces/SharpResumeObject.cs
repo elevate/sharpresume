@@ -3,7 +3,6 @@
 using System;
 using System.Collections;
 using System.Diagnostics;
-using NLog;
 
 #endregion
 
@@ -21,7 +20,7 @@ namespace Just3Ws.SharpResume
     /// <summary>
     /// The base NLog log instance.
     /// </summary>
-    protected static readonly Logger log = LogManager.GetCurrentClassLogger();
+    private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
     private readonly ISharpResumeObject parent;
 
